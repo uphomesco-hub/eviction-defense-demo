@@ -5,7 +5,7 @@
     { name: "superhuman", className: "view-superhuman" },
   ];
   const routeClasses = ["view-selector", ...routes.map((route) => route.className)];
-  const themeKey = "eviction-demo-theme";
+  const themeKey = "eviction-demo-theme-v2";
 
   function routeFromHash() {
     const hash = window.location.hash.replace("#", "");
@@ -43,7 +43,7 @@
   }
 
   function initialTheme() {
-    return window.localStorage.getItem(themeKey) || "dark";
+    return window.localStorage.getItem(themeKey) || "light";
   }
 
   document.querySelectorAll("[data-menu-toggle]").forEach((button) => {
