@@ -11,7 +11,7 @@
     const hash = window.location.hash.replace("#", "");
     if (hash === "selector") return "view-selector";
     const match = routes.find((route) => hash.startsWith(route.name));
-    return match ? match.className : "view-cal";
+    return match ? match.className : "view-selector";
   }
 
   function closeMenus() {
