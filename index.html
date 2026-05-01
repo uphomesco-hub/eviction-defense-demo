@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eviction Document Coordination Demo</title>
+    <meta
+      name="description"
+      content="Static client demo with Pinterest-inspired and Superhuman-inspired one-page UI versions for an eviction document coordination service."
+    >
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main id="selector" class="selector-view" aria-labelledby="selector-title">
+      <section class="selector-hero">
+        <div class="selector-copy">
+          <p class="selector-kicker">Client demo</p>
+          <h1 id="selector-title">Eviction document coordination website concepts</h1>
+          <p>
+            Choose between two complete responsive one-page directions. Both concepts present the service as
+            fast, practical document coordination for tenants who need more time, clearer filing steps, or a
+            prepared packet before a court deadline.
+          </p>
+          <p class="selector-disclaimer">
+            Demo disclaimer: this is a document coordination service concept, not a law firm, and it does not
+            provide legal advice or attorney representation.
+          </p>
+        </div>
+        <div class="selector-options" aria-label="Open a design version">
+          <a class="selector-card pinterest-card" href="#pinterest">
+            <span>Pinterest-inspired</span>
+            <strong>Warm, visual, action-focused</strong>
+            <small>Masonry service boards, rounded cards, urgent help flow.</small>
+          </a>
+          <a class="selector-card superhuman-card" href="#superhuman">
+            <span>Superhuman-inspired</span>
+            <strong>Premium, minimal, process-led</strong>
+            <small>Dark cinematic hero, clean workflow panels, quiet confidence.</small>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <article id="pinterest-version" class="site-version pinterest-version" aria-labelledby="pinterest-title">
+      <header class="pin-nav">
+        <a class="pin-brand" href="#pinterest-home" aria-label="Home">
+          <span class="brand-dot">G</span>
+          Guardian Docs
+        </a>
+        <button class="mobile-toggle" type="button" data-menu-toggle="pin-menu" aria-expanded="false">
+          Menu
+        </button>
+        <nav id="pin-menu" class="nav-links" aria-label="Pinterest version navigation">
+          <a href="#pinterest-home">Home</a>
+          <a href="#pinterest-services">Services</a>
+          <a href="#pinterest-process">Process</a>
+          <a href="#pinterest-packages">Packages</a>
+          <a href="#pinterest-reviews">Reviews</a>
+          <a href="#pinterest-faq">FAQ</a>
+          <a href="#pinterest-contact">Contact</a>
+        </nav>
+        <a class="nav-demo-link" href="#selector">All versions</a>
+      </header>
+
+      <section id="pinterest-home" class="pin-hero">
+        <div class="pin-hero-copy">
+          <p class="pin-badge">Mainland USA document coordination</p>
+          <h2 id="pinterest-title">Get a clearer filing plan before the clock runs out.</h2>
+          <p>
+            Guardian Docs helps renters organize eviction-response paperwork, filing instructions, and
+            next-step checklists when a notice, lockout date, or court deadline is moving fast.
+          </p>
+          <div class="button-row">
+            <a class="pin-button primary" href="#pinterest-contact">Start intake</a>
+            <a class="pin-button secondary" href="#pinterest-process">See the process</a>
+          </div>
+        </div>
+        <div class="pin-board" aria-label="Service highlights">
+          <div class="pin-tile tall red">
+            <span>24 hr</span>
+            <strong>Packet preparation goal</strong>
+          </div>
+          <div class="pin-tile photo notice">
+            <span>Notice received</span>
+          </div>
+          <div class="pin-tile warm">
+            <strong>County-aware filing checklist</strong>
+            <p>Clear steps for where to bring documents and what to prepare.</p>
+          </div>
+          <div class="pin-tile photo folder">
+            <span>Print-ready documents</span>
+          </div>
+          <div class="pin-tile green">
+            <strong>More time to plan</strong>
+            <p>Support for tenants seeking time to negotiate, gather funds, or relocate.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pinterest-services" class="pin-section">
+        <div class="section-heading">
+          <p class="pin-badge">Services</p>
+          <h3>Practical help organized around the tenant’s deadline</h3>
+        </div>
+        <div class="pin-masonry">
+          <article class="pin-service-card">
+            <div class="pin-card-art art-docs"></div>
+            <h4>Document packet preparation</h4>
+            <p>Responses and support documents are assembled around the renter’s situation and local filing path.</p>
+          </article>
+          <article class="pin-service-card">
+            <div class="pin-card-art art-map"></div>
+            <h4>Step-by-step filing instructions</h4>
+            <p>Clients receive plain-language directions for signing, notarizing when needed, printing, and filing.</p>
+          </article>
+          <article class="pin-service-card tall">
+            <div class="pin-card-art art-call"></div>
+            <h4>Guided consultation</h4>
+            <p>For renters who want to talk through timing, document options, and immediate next steps before acting.</p>
+          </article>
+          <article class="pin-service-card">
+            <div class="pin-card-art art-clock"></div>
+            <h4>Fast turnaround</h4>
+            <p>Urgent intakes are prioritized so paperwork can be ready quickly when a court date is close.</p>
+          </article>
+          <article class="pin-service-card">
+            <div class="pin-card-art art-home"></div>
+            <h4>Nationwide coordination</h4>
+            <p>Service is framed for renters across U.S. counties, with details adjusted for the stated location.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pinterest-process" class="pin-section process-band">
+        <div class="section-heading">
+          <p class="pin-badge">Process</p>
+          <h3>From stressful notice to organized packet</h3>
+        </div>
+        <div class="pin-steps">
+          <article>
+            <span>1</span>
+            <h4>Share the situation</h4>
+            <p>Upload or describe the notice, court date, county, and what outcome you need time for.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h4>Coordinator reviews details</h4>
+            <p>The team checks the timeline and prepares a packet path that matches the client’s stated facts.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h4>Receive documents and directions</h4>
+            <p>Clients get print-ready documents with instructions for signatures, copies, filing, and next steps.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pinterest-packages" class="pin-section">
+        <div class="section-heading">
+          <p class="pin-badge">Packages</p>
+          <h3>Three levels of support</h3>
+        </div>
+        <div class="package-grid pin-package-grid">
+          <article>
+            <p>DIY Roadmap</p>
+            <h4>$95</h4>
+            <span>State-focused guide, tenant-rights overview, filing checklist, and preparation notes.</span>
+          </article>
+          <article class="featured">
+            <p>Consultation + Guide</p>
+            <h4>$145</h4>
+            <span>Roadmap plus a one-on-one review to clarify timing and documents before filing.</span>
+          </article>
+          <article>
+            <p>Full Packet Coordination</p>
+            <h4>$549</h4>
+            <span>Initial review, document preparation, filing instructions, and follow-up document support if needed.</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="pinterest-reviews" class="pin-section reviews-wall">
+        <div class="section-heading">
+          <p class="pin-badge">Reviews</p>
+          <h3>What clients need to feel after the first call</h3>
+        </div>
+        <div class="review-pins">
+          <blockquote>
+            <p>“The packet was organized, the filing steps were clear, and I finally knew what to do next.”</p>
+            <cite>Tenant in Texas</cite>
+          </blockquote>
+          <blockquote>
+            <p>“I needed time to work things out. The checklist made the court counter feel less overwhelming.”</p>
+            <cite>Tenant in Florida</cite>
+          </blockquote>
+          <blockquote>
+            <p>“Fast response, plain language, and no surprise charges after the intake.”</p>
+            <cite>Tenant in Illinois</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="pinterest-faq" class="pin-section">
+        <div class="section-heading">
+          <p class="pin-badge">FAQ</p>
+          <h3>Common questions before starting</h3>
+        </div>
+        <div class="faq-list pin-faq">
+          <details>
+            <summary>Can this stop every eviction?</summary>
+            <p>No service can promise a court result. The goal is to prepare organized documents and filing guidance so tenants can act before key deadlines.</p>
+          </details>
+          <details>
+            <summary>How fast can documents be prepared?</summary>
+            <p>Urgent cases are positioned for quick turnaround, often within a day after the needed details are received.</p>
+          </details>
+          <details>
+            <summary>Is this legal representation?</summary>
+            <p>No. Guardian Docs is a document coordination service and not a law firm.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="pinterest-contact" class="pin-contact">
+        <div>
+          <p class="pin-badge">Contact</p>
+          <h3>Ready to organize the next step?</h3>
+          <p>
+            Use this demo intake to capture notice date, court date, county, and preferred turnaround.
+          </p>
+          <p class="legal-note">Guardian Docs is a document coordination service, not a law firm, and does not provide legal advice.</p>
+        </div>
+        <form class="pin-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Full name">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com">
+          </label>
+          <label>
+            Urgency
+            <select name="urgency">
+              <option>Court date within 7 days</option>
+              <option>Notice received</option>
+              <option>Planning ahead</option>
+            </select>
+          </label>
+          <button class="pin-button primary" type="button">Request coordination</button>
+        </form>
+      </section>
+    </article>
+
+    <article id="superhuman-version" class="site-version superhuman-version" aria-labelledby="superhuman-title">
+      <header class="super-nav">
+        <a class="super-brand" href="#superhuman-home">Resolve Packet</a>
+        <button class="mobile-toggle super-toggle" type="button" data-menu-toggle="super-menu" aria-expanded="false">
+          Menu
+        </button>
+        <nav id="super-menu" class="nav-links" aria-label="Superhuman version navigation">
+          <a href="#superhuman-home">Home</a>
+          <a href="#superhuman-services">Services</a>
+          <a href="#superhuman-process">Process</a>
+          <a href="#superhuman-packages">Packages</a>
+          <a href="#superhuman-reviews">Reviews</a>
+          <a href="#superhuman-faq">FAQ</a>
+          <a href="#superhuman-contact">Contact</a>
+        </nav>
+        <a class="super-nav-cta" href="#selector">All versions</a>
+      </header>
+
+      <section id="superhuman-home" class="super-hero">
+        <div class="super-hero-inner">
+          <p class="super-kicker">Eviction paperwork, coordinated fast</p>
+          <h2 id="superhuman-title">A calmer way to prepare before the filing window closes.</h2>
+          <p>
+            Resolve Packet turns notices, dates, and county requirements into a clear document plan, a prepared
+            packet, and practical filing steps for tenants who need to act now.
+          </p>
+          <div class="button-row">
+            <a class="super-button cream" href="#superhuman-contact">Begin review</a>
+            <a class="super-link" href="#superhuman-process">View workflow</a>
+          </div>
+        </div>
+        <div class="super-product" aria-label="Document coordination dashboard preview">
+          <div class="product-topbar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="product-grid">
+            <div class="product-sidebar">
+              <strong>Case intake</strong>
+              <span class="active">Notice review</span>
+              <span>Packet draft</span>
+              <span>Filing steps</span>
+            </div>
+            <div class="product-panel">
+              <p>Deadline status</p>
+              <h3>Priority review</h3>
+              <div class="timeline-row"><span></span><strong>Notice date captured</strong></div>
+              <div class="timeline-row"><span></span><strong>County checklist matched</strong></div>
+              <div class="timeline-row muted"><span></span><strong>Client print packet pending</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="superhuman-services" class="super-section">
+        <div class="super-section-intro">
+          <p class="super-kicker dark">Services</p>
+          <h3>Built for the few days that matter most.</h3>
+        </div>
+        <div class="super-feature-grid">
+          <article>
+            <p>01</p>
+            <h4>Notice and timeline review</h4>
+            <span>Capture the notice type, court date, county, and immediate objective before a packet is prepared.</span>
+          </article>
+          <article>
+            <p>02</p>
+            <h4>Document assembly</h4>
+            <span>Prepare a coordinated filing packet based on the facts the tenant provides and the stated county path.</span>
+          </article>
+          <article>
+            <p>03</p>
+            <h4>Filing direction</h4>
+            <span>Deliver direct instructions for signatures, copies, notarization when applicable, and filing sequence.</span>
+          </article>
+          <article>
+            <p>04</p>
+            <h4>Time-to-plan support</h4>
+            <span>Help clients use the process to pursue negotiation, funds, relocation planning, or a more orderly response.</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="superhuman-process" class="super-section super-workflow">
+        <div class="super-section-intro narrow">
+          <p class="super-kicker dark">Process</p>
+          <h3>One intake becomes one complete action plan.</h3>
+        </div>
+        <div class="workflow-table">
+          <div>
+            <span>Step 1</span>
+            <strong>Intake</strong>
+            <p>Client submits notice details, court dates, county, and goal.</p>
+          </div>
+          <div>
+            <span>Step 2</span>
+            <strong>Review</strong>
+            <p>Coordinator checks timing and selects the document path.</p>
+          </div>
+          <div>
+            <span>Step 3</span>
+            <strong>Prepare</strong>
+            <p>Packet, guide, and filing checklist are assembled.</p>
+          </div>
+          <div>
+            <span>Step 4</span>
+            <strong>File</strong>
+            <p>Client receives print, signature, and filing instructions.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="superhuman-packages" class="super-section">
+        <div class="super-section-intro">
+          <p class="super-kicker dark">Packages</p>
+          <h3>Simple pricing, clear deliverables.</h3>
+        </div>
+        <div class="super-pricing">
+          <article>
+            <span>Guide</span>
+            <h4>$95</h4>
+            <p>Self-guided packet roadmap with preparation notes and filing checklist.</p>
+          </article>
+          <article class="selected">
+            <span>Consult</span>
+            <h4>$145</h4>
+            <p>Guide plus a focused coordination call to clarify timing and next steps.</p>
+          </article>
+          <article>
+            <span>Complete</span>
+            <h4>$549</h4>
+            <p>Initial review, prepared documents, filing instructions, and follow-up document support.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="superhuman-reviews" class="super-section proof-section">
+        <div class="proof-copy">
+          <p class="super-kicker dark">Reviews</p>
+          <h3>Clients want clarity before confidence.</h3>
+          <p>
+            The message across tenant feedback is consistent: fast response matters, but clear instructions matter
+            just as much when someone is facing a filing counter or court date.
+          </p>
+        </div>
+        <div class="proof-quotes">
+          <blockquote>
+            <p>“Everything was in order, and I understood the next step before I printed the packet.”</p>
+            <cite>Verified client note</cite>
+          </blockquote>
+          <blockquote>
+            <p>“The call helped me focus on dates, documents, and what I needed to bring.”</p>
+            <cite>Verified client note</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="superhuman-faq" class="super-section">
+        <div class="super-section-intro">
+          <p class="super-kicker dark">FAQ</p>
+          <h3>Direct answers, no overpromising.</h3>
+        </div>
+        <div class="faq-list super-faq">
+          <details>
+            <summary>What result can be guaranteed?</summary>
+            <p>No court outcome is guaranteed. The service coordinates documents and practical filing steps based on information supplied by the client.</p>
+          </details>
+          <details>
+            <summary>Who files the packet?</summary>
+            <p>The client files the documents. The service provides preparation and instructions, not attorney representation.</p>
+          </details>
+          <details>
+            <summary>Can I use this if I only need time?</summary>
+            <p>Yes. Many clients use document coordination to create a more orderly window to negotiate, raise funds, or plan a move.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="superhuman-contact" class="super-contact">
+        <div>
+          <p class="super-kicker">Contact</p>
+          <h3>Start with the deadline.</h3>
+          <p>Tell the coordination team what happened, where it happened, and when the next deadline arrives.</p>
+          <p class="legal-note">Resolve Packet is a document coordination service, not a law firm, and does not provide legal advice.</p>
+        </div>
+        <form class="super-form">
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com">
+          </label>
+          <label>
+            County and state
+            <input type="text" name="location" placeholder="County, State">
+          </label>
+          <label>
+            Deadline
+            <input type="text" name="deadline" placeholder="Court date or notice date">
+          </label>
+          <button class="super-button cream" type="button">Request review</button>
+        </form>
+      </section>
+    </article>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
