@@ -20,6 +20,7 @@
     });
     document.querySelectorAll("[data-menu-toggle]").forEach((button) => {
       button.setAttribute("aria-expanded", "false");
+      button.setAttribute("aria-label", "Open navigation menu");
     });
   }
 
@@ -50,8 +51,18 @@
     button.addEventListener("click", () => {
       const menu = document.getElementById(button.dataset.menuToggle);
       if (!menu) return;
+      document.querySelectorAll(".nav-links.is-open").forEach((openMenu) => {
+        if (openMenu !== menu) openMenu.classList.remove("is-open");
+      });
+      document.querySelectorAll("[data-menu-toggle]").forEach((otherButton) => {
+        if (otherButton !== button) {
+          otherButton.setAttribute("aria-expanded", "false");
+          otherButton.setAttribute("aria-label", "Open navigation menu");
+        }
+      });
       const isOpen = menu.classList.toggle("is-open");
       button.setAttribute("aria-expanded", String(isOpen));
+      button.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
     });
   });
 

@@ -236,12 +236,48 @@ body.view-superhuman .superhuman-version {
 }
 
 .mobile-toggle {
+  position: relative;
   display: none;
   border: 0;
   background: var(--pin-sand);
   border-radius: 16px;
-  padding: 10px 14px;
   color: inherit;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.mobile-toggle span {
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.mobile-toggle span:nth-child(1) {
+  transform: translateY(-6px);
+}
+
+.mobile-toggle span:nth-child(3) {
+  transform: translateY(6px);
+}
+
+.mobile-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.mobile-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: rotate(-45deg);
 }
 
 .nav-demo-link,
