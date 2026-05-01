@@ -301,8 +301,11 @@ body.view-superhuman .superhuman-version {
 }
 
 .theme-toggle {
+  position: relative;
   display: inline-flex;
+  width: 40px;
   min-height: 40px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   border: 1px solid currentColor;
@@ -310,10 +313,52 @@ body.view-superhuman .superhuman-version {
   background: transparent;
   color: inherit;
   cursor: pointer;
-  font-size: 13px;
-  font-weight: 800;
-  padding: 9px 13px;
-  white-space: nowrap;
+  padding: 0;
+  flex: 0 0 40px;
+}
+
+.theme-toggle::before,
+.theme-toggle::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  transition: opacity 160ms ease, transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.theme-toggle::before {
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.theme-toggle::after {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow:
+    0 -11px 0 currentColor,
+    0 11px 0 currentColor,
+    11px 0 0 currentColor,
+    -11px 0 0 currentColor,
+    8px 8px 0 currentColor,
+    -8px 8px 0 currentColor,
+    8px -8px 0 currentColor,
+    -8px -8px 0 currentColor;
+}
+
+.theme-toggle[aria-pressed="true"]::before {
+  width: 18px;
+  height: 18px;
+  border-color: transparent;
+  box-shadow: inset 6px -4px 0 currentColor;
+  transform: rotate(-14deg);
+}
+
+.theme-toggle[aria-pressed="true"]::after {
+  opacity: 0;
+  transform: scale(0.4);
 }
 
 .pin-nav .theme-toggle {

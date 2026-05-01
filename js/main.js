@@ -37,6 +37,7 @@
     document.documentElement.style.colorScheme = isDark ? "dark" : "light";
     document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
       button.setAttribute("aria-pressed", String(isDark));
+      button.setAttribute("title", isDark ? "Dark on" : "Dark off");
       const label = button.querySelector("[data-theme-label]");
       if (label) label.textContent = isDark ? "Dark on" : "Dark off";
     });
