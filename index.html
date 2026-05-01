@@ -6,7 +6,7 @@
     <title>Eviction Document Coordination Demo</title>
     <meta
       name="description"
-      content="Static client demo with Pinterest-inspired and Superhuman-inspired one-page UI versions for an eviction document coordination service."
+      content="Static client demo with Cal-inspired, Pinterest-inspired, and Superhuman-inspired one-page UI versions for an eviction document coordination service."
     >
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -17,7 +17,7 @@
           <p class="selector-kicker">Client demo</p>
           <h1 id="selector-title">Eviction document coordination website concepts</h1>
           <p>
-            Choose between two complete responsive one-page directions. Both concepts present the service as
+            Choose between three complete responsive one-page directions. Each concept presents the service as
             fast, practical document coordination for tenants who need more time, clearer filing steps, or a
             prepared packet before a court deadline.
           </p>
@@ -26,7 +26,15 @@
             provide legal advice or attorney representation.
           </p>
         </div>
+        <button class="theme-toggle selector-theme-toggle" type="button" data-theme-toggle aria-pressed="true">
+          <span data-theme-label>Dark on</span>
+        </button>
         <div class="selector-options" aria-label="Open a design version">
+          <a class="selector-card cal-card" href="#cal">
+            <span>Cal-inspired</span>
+            <strong>Scheduling-first, crisp, operational</strong>
+            <small>Dark product dashboard, appointment slots, deadline-led intake.</small>
+          </a>
           <a class="selector-card pinterest-card" href="#pinterest">
             <span>Pinterest-inspired</span>
             <strong>Warm, visual, action-focused</strong>
@@ -40,6 +48,213 @@
         </div>
       </section>
     </main>
+
+    <article id="cal-version" class="site-version cal-version" aria-labelledby="cal-title">
+      <header class="cal-nav">
+        <a class="cal-brand" href="#cal-home" aria-label="Cal-inspired home">
+          <span class="cal-mark">C</span>
+          CourtCal Docs
+        </a>
+        <button class="mobile-toggle cal-toggle" type="button" data-menu-toggle="cal-menu" aria-expanded="false">
+          Menu
+        </button>
+        <nav id="cal-menu" class="nav-links" aria-label="Cal version navigation">
+          <a href="#cal-home">Home</a>
+          <a href="#cal-services">Services</a>
+          <a href="#cal-process">Process</a>
+          <a href="#cal-packages">Packages</a>
+          <a href="#cal-reviews">Reviews</a>
+          <a href="#cal-faq">FAQ</a>
+          <a href="#cal-contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="true">
+            <span data-theme-label>Dark on</span>
+          </button>
+          <a class="cal-nav-cta" href="#selector">All versions</a>
+        </div>
+      </header>
+
+      <section id="cal-home" class="cal-hero">
+        <div class="cal-hero-copy">
+          <p class="cal-kicker">Deadline-first coordination</p>
+          <h2 id="cal-title">Book the fastest path from eviction notice to filing packet.</h2>
+          <p>
+            CourtCal Docs turns an urgent notice into a structured intake, a coordinator review slot, and a
+            clear document checklist before the next court or filing deadline.
+          </p>
+          <div class="button-row">
+            <a class="cal-button primary" href="#cal-contact">Book intake</a>
+            <a class="cal-button secondary" href="#cal-process">See workflow</a>
+          </div>
+        </div>
+        <div class="cal-scheduler" aria-label="Scheduling and case intake preview">
+          <div class="cal-panel-top">
+            <div>
+              <span>May 2026</span>
+              <strong>Coordinator availability</strong>
+            </div>
+            <span class="cal-status">3 urgent slots</span>
+          </div>
+          <div class="cal-calendar-grid" aria-hidden="true">
+            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span>
+            <button type="button">4</button><button type="button">5</button><button type="button" class="active">6</button><button type="button">7</button><button type="button">8</button>
+            <button type="button">11</button><button type="button" class="active">12</button><button type="button">13</button><button type="button">14</button><button type="button">15</button>
+          </div>
+          <div class="cal-slot-list">
+            <article>
+              <span>10:30 AM</span>
+              <strong>Notice review</strong>
+              <small>Upload notice, county, deadline</small>
+            </article>
+            <article class="selected">
+              <span>2:00 PM</span>
+              <strong>Packet planning call</strong>
+              <small>Coordinator confirms filing steps</small>
+            </article>
+            <article>
+              <span>5:15 PM</span>
+              <strong>Same-day triage</strong>
+              <small>For court dates within 7 days</small>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cal-services" class="cal-section">
+        <div class="cal-section-heading">
+          <p class="cal-kicker">Services</p>
+          <h3>Everything is organized around the next appointment and the next deadline.</h3>
+        </div>
+        <div class="cal-service-grid">
+          <article>
+            <span>01</span>
+            <h4>Intake scheduling</h4>
+            <p>Clients pick a review slot, share the notice, and identify the court date or filing window.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h4>Packet readiness check</h4>
+            <p>A coordinator reviews facts, missing items, and signature needs before documents are finalized.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h4>Filing checklist</h4>
+            <p>Plain-language instructions cover copies, signatures, county filing location, and timing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="cal-process" class="cal-section cal-process">
+        <div class="cal-section-heading">
+          <p class="cal-kicker">Process</p>
+          <h3>A booked workflow with visible status from intake to filing.</h3>
+        </div>
+        <div class="cal-timeline">
+          <article>
+            <span>Booked</span>
+            <strong>Client selects a review slot</strong>
+            <p>The intake captures location, notice date, court date, and the tenant’s immediate objective.</p>
+          </article>
+          <article>
+            <span>Reviewed</span>
+            <strong>Coordinator confirms the packet path</strong>
+            <p>The team checks timing and flags missing documents before preparing the response package.</p>
+          </article>
+          <article>
+            <span>Ready</span>
+            <strong>Client receives filing instructions</strong>
+            <p>Documents, copy count, signing steps, and next actions are delivered in one organized packet.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="cal-packages" class="cal-section">
+        <div class="cal-section-heading">
+          <p class="cal-kicker">Packages</p>
+          <h3>Choose the amount of coordination needed before the appointment.</h3>
+        </div>
+        <div class="cal-pricing">
+          <article>
+            <span>Roadmap</span>
+            <h4>$95</h4>
+            <p>Self-guided checklist, filing preparation notes, and state-focused document roadmap.</p>
+          </article>
+          <article class="featured">
+            <span>Review Slot</span>
+            <h4>$145</h4>
+            <p>Roadmap plus a focused coordinator call to align the packet with the deadline.</p>
+          </article>
+          <article>
+            <span>Full Packet</span>
+            <h4>$549</h4>
+            <p>Initial review, prepared documents, filing instructions, and follow-up document support.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="cal-reviews" class="cal-section cal-proof">
+        <div>
+          <p class="cal-kicker">Reviews</p>
+          <h3>Clients see the path before they print.</h3>
+        </div>
+        <div class="cal-quotes">
+          <blockquote>
+            <p>“The appointment made the whole thing feel manageable. I knew what to bring and when.”</p>
+            <cite>Tenant in Georgia</cite>
+          </blockquote>
+          <blockquote>
+            <p>“The checklist matched my deadline, and the packet was ready before my filing window closed.”</p>
+            <cite>Tenant in Arizona</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="cal-faq" class="cal-section">
+        <div class="cal-section-heading">
+          <p class="cal-kicker">FAQ</p>
+          <h3>Clear expectations before booking.</h3>
+        </div>
+        <div class="faq-list cal-faq">
+          <details>
+            <summary>Is this a law firm?</summary>
+            <p>No. CourtCal Docs is a document coordination service and does not provide legal advice or attorney representation.</p>
+          </details>
+          <details>
+            <summary>What should I have before booking?</summary>
+            <p>The notice, court date if available, county and state, and any documents already received from the landlord or court.</p>
+          </details>
+          <details>
+            <summary>Can a coordinator help if the deadline is very close?</summary>
+            <p>Urgent slots are designed for short timelines, but no court result or delay can be guaranteed.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="cal-contact" class="cal-contact">
+        <div>
+          <p class="cal-kicker">Book intake</p>
+          <h3>Start with the date that matters most.</h3>
+          <p>Share the notice, county, and deadline so the team can route the request to the right review slot.</p>
+          <p class="legal-note">CourtCal Docs is a document coordination service, not a law firm, and does not provide legal advice.</p>
+        </div>
+        <form class="cal-form">
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com">
+          </label>
+          <label>
+            County and state
+            <input type="text" name="location" placeholder="County, State">
+          </label>
+          <label>
+            Deadline
+            <input type="text" name="deadline" placeholder="Court date or notice date">
+          </label>
+          <button class="cal-button primary" type="button">Request booking</button>
+        </form>
+      </section>
+    </article>
 
     <article id="pinterest-version" class="site-version pinterest-version" aria-labelledby="pinterest-title">
       <header class="pin-nav">
@@ -59,7 +274,12 @@
           <a href="#pinterest-faq">FAQ</a>
           <a href="#pinterest-contact">Contact</a>
         </nav>
-        <a class="nav-demo-link" href="#selector">All versions</a>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="true">
+            <span data-theme-label>Dark on</span>
+          </button>
+          <a class="nav-demo-link" href="#selector">All versions</a>
+        </div>
       </header>
 
       <section id="pinterest-home" class="pin-hero">
@@ -267,7 +487,12 @@
           <a href="#superhuman-faq">FAQ</a>
           <a href="#superhuman-contact">Contact</a>
         </nav>
-        <a class="super-nav-cta" href="#selector">All versions</a>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="true">
+            <span data-theme-label>Dark on</span>
+          </button>
+          <a class="super-nav-cta" href="#selector">All versions</a>
+        </div>
       </header>
 
       <section id="superhuman-home" class="super-hero">
